@@ -575,6 +575,46 @@ section {
   color: #151515;
 }
 
+continue {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.continue-title {
+  padding-bottom: 40px;
+}
+
+.continue-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.continue-title h2::before {
+  content: "";
+  width: 36px;
+  height: 1px;
+  display: inline-block;
+  background: black;
+  margin: 4px 10px;
+}
+
+.continue-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1660,4 +1700,11 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+.img-thumbnail {
+  border: none; 
+  width: 400px; 
+  height: 229px;
+  border-radius: 10px;
 }

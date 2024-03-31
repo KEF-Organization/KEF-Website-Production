@@ -36,13 +36,40 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T653L6TTB4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-T653L6TTB4');
+  </script>
+   <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+    import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCJYEEVjAuQLCLydBnkD7kC41LS3K4m0UM",
+      authDomain: "kef-website.firebaseapp.com",
+      projectId: "kef-website",
+      storageBucket: "kef-website.appspot.com",
+      messagingSenderId: "376601373613",
+      appId: "1:376601373613:web:6d2e3f1eee4e9e10b60f24",
+      measurementId: "G-T653L6TTB4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    logEvent(analytics, 'privacyAndPolicyOpened',{});
+  </script>
 </head>
 
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top" style="background: rgba(0, 0, 0, 0.8);">
     <div class="container d-flex align-items-center justify-content-lg-between">
-      <h1 class="logo me-auto me-lg-0"><a href="index.html" style="font-weight: 400; text-transform: lowercase">Kef</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html" style="font-weight: 400; text-transform: lowercase; font-style: italic; font-family: 'Times New Roman', Times, serif;">Kef</a></h1>
       <a class="logo me-auto">
         <img src="assets/img/KEF_logo1-removebg-preview.png" alt="logo" class="img-fluid" style="transform: scale(2.5); margin-left: 25px;"
           alt="" class="img-fluid">
@@ -50,10 +77,15 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto " href="/index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="/index.html#about">About</a></li>
-          <li><a class="nav-link scrollto" href="/index.html#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="/index.html#team">Team</a></li>
+          <li><a class="nav-link scrollto " href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="./index.html#team">Team</a></li><li>
+            <a class="nav-link" href="KefOnNews.html">
+                <span><span style="font-family: 'Times New Roman', Times, serif; font-style: italic;">Kef&nbsp;&nbsp;</span> On News</span>
+            </a>
+          </li>        
+          <li><a class="nav-link scrollto" href="Gallery.html">Gallery</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -232,18 +264,19 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
+  
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3 style="font-weight: 400; text-transform: lowercase">Kef</h3>
+              <h3 style="font-weight: 400; text-transform: lowercase; font-style: italic; font-family: 'Times New Roman', Times, serif;">Kef</h3>
               <p>
-                Calicut Airport <br>
-                Karipur 673647, India<br><br>
+                Calicut International Airport (CCJ), <br>
+                Karipur, Kerala, India, 673647<br>
+                <br><br>
                 <strong>Phone:</strong> +91 9895114422<br>
-                <strong>Email:</strong> Mail@kef.org.in<br>
+                <strong>Email:</strong> mail@kef.org.in<br>
               </p>
               <div class="social-links mt-3">
-                <a href="https://twitter.com/KeralaExporters" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://twitter.com/KeralaExporters" class="twitter-x"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07l-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></i></a>
                 <a href="https://www.facebook.com/keralaexportersforum" class="facebook"><i
                   class="bx bxl-facebook"></i></a>
               <a href="mailto:mail@kef.org.in?subject= &body= " class="mail"><i
@@ -253,35 +286,43 @@
               </div>
             </div>
           </div>
-
+  
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/index.html#about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services.html">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Terms-0f-Services.html">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Privacy-Policy.html">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./index.html#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Terms-0f-Services.html">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Privacy-Policy.html">Privacy policy</a></li>
             </ul>
           </div>
-
+  
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services.html">kef Membership - RCMC</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services.html">Certificate of Origin</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services.html">Events - Confereces</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services.html">B2B Meets & Semiars</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services.html">Trade Quries</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/Services.html">More..</a></li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <span style="font-family: 'Times New Roman', Times, serif; font-style: italic;  font-size: 18px;">kef&nbsp;&nbsp;</span>
+                <a href="./Services.html">Membership - RCMC</a>
+            </li>
+            
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Certificate of Origin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Events - Conferences</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">B2B Meets & Seminars</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">Trade Queries</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="./Services.html">More..</a></li>
             </ul>
-          </div>
+          </div>         
         </div>
       </div>
     </div>
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>2023 Kerala Exporters' forum</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>2023 Kerala Exporter's forum</span></strong>. All Rights Reserved
+      </div>
+      <div class="copyright">
+        Developed and Maintained by <strong><span>Zwenie</span></strong>.
       </div>
     </div>
   </footer><!-- End Footer -->
